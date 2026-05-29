@@ -1,0 +1,11 @@
+# secrets - НИКОГДА не коммитить
+.env
+.env.*
+!.env.example
+
+# vercel / node
+.vercel
+node_modules
+
+# os
+.DS_Store
