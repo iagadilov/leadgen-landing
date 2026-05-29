@@ -1,4 +1,13 @@
-// Лидген landing - form submit + scroll reveals
+// Лидген landing - form submit + scroll reveals + analytics
+
+// ---- Analytics (Vercel Web Analytics custom events) ----
+function track(name, data) {
+  if (window.va) window.va('event', data ? { name, data } : { name });
+}
+// клики по любой кнопке "оставить заявку" (hero + nav)
+document.querySelectorAll('a[href="#apply"]').forEach((a) => {
+  a.addEventListener('click', () => track('cta_apply_click'));
+});
 
 // ---- Scroll reveal ----
 const io = new IntersectionObserver((entries) => {
@@ -48,6 +57,7 @@ form.addEventListener('submit', async (e) => {
       body: JSON.stringify(data),
     });
     if (!res.ok) throw new Error('bad status ' + res.status);
+    track('lead_submit', { offer: data.offer, channel: data.channel });
     swapToDone();
   } catch (err) {
     btn.classList.remove('is-loading');
