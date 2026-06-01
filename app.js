@@ -38,12 +38,13 @@ form.addEventListener('submit', async (e) => {
     channel: form.channel.value,
     contact: form.contact.value.trim(),
     niche: form.niche.value.trim(),
+    geo: form.geo.value.trim(),
     note: form.note.value.trim(),
     page: location.href,
   };
 
-  if (!data.name || !data.contact || !data.niche) {
-    errEl.textContent = 'Заполни имя, контакт и нишу';
+  if (!data.name || !data.contact || !data.niche || !data.geo) {
+    errEl.textContent = 'Заполни имя, контакт, нишу и гео';
     return;
   }
 

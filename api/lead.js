@@ -22,10 +22,11 @@ module.exports = async (req, res) => {
   const channel = String(body.channel || '').slice(0, 40).trim();
   const contact = String(body.contact || '').slice(0, 200).trim();
   const niche = String(body.niche || '').slice(0, 300).trim();
+  const geo = String(body.geo || '').slice(0, 200).trim();
   const note = String(body.note || '').slice(0, 1000).trim();
   const page = String(body.page || '').slice(0, 300).trim();
 
-  if (!name || !contact || !niche) {
+  if (!name || !contact || !niche || !geo) {
     return res.status(400).json({ ok: false, error: 'missing_fields' });
   }
 
@@ -46,6 +47,7 @@ module.exports = async (req, res) => {
     `<b>Канал:</b> ${esc(channel)}\n` +
     `<b>Контакт:</b> ${esc(contact)}\n` +
     `<b>Ниша:</b> ${esc(niche)}\n` +
+    `<b>Гео:</b> ${esc(geo)}\n` +
     (note ? `<b>Кого ловит:</b> ${esc(note)}\n` : '') +
     (page ? `\n<i>${esc(page)}</i>` : '');
 
