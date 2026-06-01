@@ -18,15 +18,15 @@ module.exports = async (req, res) => {
   body = body || {};
 
   const name = String(body.name || '').slice(0, 200).trim();
-  const offer = String(body.offer || '').slice(0, 80).trim();
+  const type = String(body.type || '').slice(0, 80).trim();
   const channel = String(body.channel || '').slice(0, 40).trim();
   const contact = String(body.contact || '').slice(0, 200).trim();
   const niche = String(body.niche || '').slice(0, 300).trim();
   const geo = String(body.geo || '').slice(0, 200).trim();
-  const note = String(body.note || '').slice(0, 1000).trim();
+  const target = String(body.target || '').slice(0, 1000).trim();
   const page = String(body.page || '').slice(0, 300).trim();
 
-  if (!name || !contact || !niche || !geo) {
+  if (!name || !contact || !niche || !geo || !target) {
     return res.status(400).json({ ok: false, error: 'missing_fields' });
   }
 
@@ -43,12 +43,12 @@ module.exports = async (req, res) => {
   const text =
     `🟠 <b>Новая заявка на лидген</b>\n\n` +
     `<b>Имя:</b> ${esc(name)}\n` +
-    (offer ? `<b>Оффер:</b> ${esc(offer)}\n` : '') +
+    (type ? `<b>Тип:</b> ${esc(type)}\n` : '') +
+    `<b>Чем занимается:</b> ${esc(niche)}\n` +
+    `<b>Кого ищем:</b> ${esc(target)}\n` +
+    `<b>Гео:</b> ${esc(geo)}\n` +
     `<b>Канал:</b> ${esc(channel)}\n` +
     `<b>Контакт:</b> ${esc(contact)}\n` +
-    `<b>Ниша:</b> ${esc(niche)}\n` +
-    `<b>Гео:</b> ${esc(geo)}\n` +
-    (note ? `<b>Кого ловит:</b> ${esc(note)}\n` : '') +
     (page ? `\n<i>${esc(page)}</i>` : '');
 
   try {

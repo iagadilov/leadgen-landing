@@ -272,48 +272,50 @@
         </div>
 
         <div class="field">
-          <label for="offer">Что интересно</label>
-          <div class="select-wrap">
-            <select id="offer" name="offer">
-              <option value="Сбор лидов (база компаний + ЛПР под нишу)">Сбор лидов (база компаний + ЛПР под нишу)</option>
-              <option value="Аутрич (AI пишет персональные касания)">Аутрич (AI пишет персональные касания)</option>
-              <option value="Всё вместе (сбор + аутрич)">Всё вместе (сбор + аутрич)</option>
-              <option value="Пока не определился">Пока не определился</option>
-            </select>
-            <svg class="select-caret" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          <label>Ты</label>
+          <div class="segmented" role="radiogroup" aria-label="Тип заявителя">
+            <input type="radio" id="ty-biz" name="type" value="Бизнес/продукт - нужны B2B-клиенты" checked>
+            <label for="ty-biz">Бизнес</label>
+            <input type="radio" id="ty-ag" name="type" value="Агентство/специалист - ищу клиентов на услуги">
+            <label for="ty-ag">Агентство</label>
+            <input type="radio" id="ty-prod" name="type" value="AI/IT-продукт - ищу клиентов">
+            <label for="ty-prod">AI/IT-продукт</label>
           </div>
+          <span class="field-hint">Бизнес - нужны B2B-клиенты &middot; Агентство/спец - ищу клиентов на свои услуги</span>
+        </div>
+
+        <div class="field">
+          <label for="niche">Чем занимаешься / что продаёшь</label>
+          <input id="niche" name="niche" type="text" placeholder="напр. таргет-агентство, опт пиломатериалов, AI-чатботы" required>
+        </div>
+
+        <div class="field">
+          <label for="target">Кого ищем <span class="opt">(твой идеальный клиент)</span></label>
+          <textarea id="target" name="target" rows="3" placeholder="ниша + кто принимает решение. напр. стоматологии, владелец / стройкомпании, прораб-закупщик" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="geo">Гео поиска</label>
+          <input id="geo" name="geo" type="text" placeholder="напр. Алматы, вся РФ, США" required>
         </div>
 
         <div class="field">
           <label>Удобный канал связи</label>
-          <div class="segmented" role="radiogroup" aria-label="Канал связи">
+          <div class="segmented cols2" role="radiogroup" aria-label="Канал связи">
             <input type="radio" id="ch-tg" name="channel" value="Telegram" checked>
             <label for="ch-tg">Telegram</label>
             <input type="radio" id="ch-wa" name="channel" value="WhatsApp">
             <label for="ch-wa">WhatsApp</label>
             <input type="radio" id="ch-ig" name="channel" value="Instagram">
             <label for="ch-ig">Instagram</label>
+            <input type="radio" id="ch-em" name="channel" value="Email">
+            <label for="ch-em">Email</label>
           </div>
         </div>
 
         <div class="field">
           <label for="contact">Контакт для связи</label>
-          <input id="contact" name="contact" type="text" placeholder="@username или +7..." required>
-        </div>
-
-        <div class="field">
-          <label for="niche">Ниша / что продаёшь</label>
-          <input id="niche" name="niche" type="text" placeholder="напр. маркетинг-агентство, опт, b2b-сервис" required>
-        </div>
-
-        <div class="field">
-          <label for="geo">Город / гео</label>
-          <input id="geo" name="geo" type="text" placeholder="напр. Алматы, весь КЗ, СНГ" required>
-        </div>
-
-        <div class="field">
-          <label for="note">Кого хочешь ловить <span class="opt">(необязательно)</span></label>
-          <textarea id="note" name="note" rows="3" placeholder="пару слов про идеального клиента"></textarea>
+          <input id="contact" name="contact" type="text" placeholder="@username, +7... или email" required>
         </div>
 
         <!-- honeypot -->

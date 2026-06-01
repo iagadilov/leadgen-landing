@@ -34,17 +34,17 @@ form.addEventListener('submit', async (e) => {
 
   const data = {
     name: form.name.value.trim(),
-    offer: form.offer.value,
+    type: form.type.value,
     channel: form.channel.value,
     contact: form.contact.value.trim(),
     niche: form.niche.value.trim(),
     geo: form.geo.value.trim(),
-    note: form.note.value.trim(),
+    target: form.target.value.trim(),
     page: location.href,
   };
 
-  if (!data.name || !data.contact || !data.niche || !data.geo) {
-    errEl.textContent = 'Заполни имя, контакт, нишу и гео';
+  if (!data.name || !data.contact || !data.niche || !data.geo || !data.target) {
+    errEl.textContent = 'Заполни имя, чем занимаешься, кого ищем, гео и контакт';
     return;
   }
 
@@ -58,7 +58,7 @@ form.addEventListener('submit', async (e) => {
       body: JSON.stringify(data),
     });
     if (!res.ok) throw new Error('bad status ' + res.status);
-    track('lead_submit', { offer: data.offer, channel: data.channel });
+    track('lead_submit', { type: data.type, channel: data.channel });
     swapToDone();
   } catch (err) {
     btn.classList.remove('is-loading');
