@@ -40,6 +40,7 @@ form.addEventListener('submit', async (e) => {
     niche: form.niche.value.trim(),
     geo: form.geo.value.trim(),
     target: form.target.value.trim(),
+    hook: form.hook.value,
     page: location.href,
   };
 
@@ -58,7 +59,7 @@ form.addEventListener('submit', async (e) => {
       body: JSON.stringify(data),
     });
     if (!res.ok) throw new Error('bad status ' + res.status);
-    track('lead_submit', { type: data.type, channel: data.channel });
+    track('lead_submit', { type: data.type, channel: data.channel, hook: data.hook });
     swapToDone();
   } catch (err) {
     btn.classList.remove('is-loading');

@@ -318,6 +318,22 @@
           <input id="contact" name="contact" type="text" placeholder="@username, +7... или email" required>
         </div>
 
+        <div class="field">
+          <label for="hook">Что зацепило в видео? <span class="opt">(необязательно)</span></label>
+          <div class="select-wrap">
+            <select id="hook" name="hook">
+              <option value="">- выбери -</option>
+              <option value="Что система сама находит клиентов">Что система сама находит клиентов</option>
+              <option value="Находит ЛПР (кто принимает решение)">Находит ЛПР (кто принимает решение)</option>
+              <option value="Персональные сообщения, а не спам">Персональные сообщения, а не спам</option>
+              <option value="Подхватывает и ведёт диалог">Подхватывает и ведёт диалог</option>
+              <option value="Что это собрал один человек на AI">Что это собрал один человек на AI</option>
+              <option value="Другое">Другое</option>
+            </select>
+            <svg class="select-caret" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+
         <!-- honeypot -->
         <input type="text" name="company_url" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 

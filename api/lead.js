@@ -24,6 +24,7 @@ module.exports = async (req, res) => {
   const niche = String(body.niche || '').slice(0, 300).trim();
   const geo = String(body.geo || '').slice(0, 200).trim();
   const target = String(body.target || '').slice(0, 1000).trim();
+  const hook = String(body.hook || '').slice(0, 120).trim();
   const page = String(body.page || '').slice(0, 300).trim();
 
   if (!name || !contact || !niche || !geo || !target) {
@@ -49,6 +50,7 @@ module.exports = async (req, res) => {
     `<b>Гео:</b> ${esc(geo)}\n` +
     `<b>Канал:</b> ${esc(channel)}\n` +
     `<b>Контакт:</b> ${esc(contact)}\n` +
+    (hook ? `<b>Зацепило в видео:</b> ${esc(hook)}\n` : '') +
     (page ? `\n<i>${esc(page)}</i>` : '');
 
   try {
