@@ -395,7 +395,7 @@ section{position:relative}
 }
 
 /* PROBLEM */
-.problem,.system,.loop,.offers,.proof,.limits,.faq,.apply{padding:0 0 92px}
+.problem,.system,.loop,.pricing,.offers,.proof,.limits,.faq,.apply{padding:0 0 92px}
 .split-grid{
   max-width:var(--maxw);
   margin:0 auto;
@@ -496,6 +496,81 @@ section{position:relative}
 .step p{font-size:15px; color:var(--muted)}
 
 /* OFFERS */
+.price-card{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:28px;
+  display:grid;
+  grid-template-columns:1fr 1.35fr .9fr;
+  gap:18px;
+  align-items:stretch;
+  background:var(--ink);
+  color:#fff;
+  border-radius:10px;
+  box-shadow:var(--shadow);
+}
+.price-main,.price-next,.price-conversions{
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:8px;
+  padding:22px;
+}
+.price-label,.price-next span{
+  display:block;
+  color:#AEBEFA;
+  font-size:12px;
+  font-weight:850;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.price-main strong{
+  display:block;
+  font-family:'Clash Display';
+  font-size:46px;
+  line-height:1;
+}
+.price-main p,.price-next p,.price-note{
+  color:#D5DBE8;
+  font-size:15px;
+}
+.price-main p{margin-top:12px}
+.price-conversions{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+.price-conversions div{
+  background:rgba(255,255,255,.08);
+  border-radius:8px;
+  padding:18px 14px;
+}
+.price-conversions span{
+  display:block;
+  font-family:'Clash Display';
+  font-size:26px;
+  font-weight:700;
+  line-height:1;
+  white-space:nowrap;
+}
+.price-conversions small{
+  display:block;
+  margin-top:8px;
+  color:#AEBEFA;
+  font-size:12px;
+  font-weight:850;
+}
+.price-next strong{
+  display:block;
+  font-family:'Clash Display';
+  font-size:32px;
+  line-height:1;
+}
+.price-next p{margin-top:12px}
+.price-note{
+  grid-column:1 / -1;
+  margin-top:-2px;
+}
+
 .offer-grid{
   max-width:var(--maxw);
   margin:0 auto;
@@ -531,6 +606,30 @@ section{position:relative}
 .offer-card h3{font-size:34px}
 .offer-card p{color:var(--muted)}
 .offer-card .btn{margin-top:auto}
+.offer-price{
+  display:flex;
+  align-items:flex-end;
+  gap:12px;
+  padding:16px;
+  border:1px solid #AEBEFA;
+  background:#F2F5FF;
+  border-radius:8px;
+}
+.offer-price strong{
+  font-family:'Clash Display';
+  font-size:34px;
+  line-height:1;
+}
+.offer-price span{
+  color:var(--blue);
+  font-size:13px;
+  font-weight:800;
+}
+.offer-note{
+  color:var(--blue)!important;
+  font-size:14px;
+  font-weight:750;
+}
 
 /* PROOF */
 .proof-board{
@@ -793,6 +892,8 @@ section{position:relative}
 /* RESPONSIVE */
 @media (max-width:980px){
   .hero-inner,.split-grid,.offer-grid,.apply-grid{grid-template-columns:1fr}
+  .price-card{grid-template-columns:1fr}
+  .price-conversions{grid-template-columns:repeat(3,1fr)}
   .system-grid{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr)}
   .proof-board{grid-template-columns:1fr}
@@ -813,7 +914,10 @@ section{position:relative}
   .metric-row,.system-grid,.steps,.faq-grid{grid-template-columns:1fr}
   .section-head,.split-grid,.system-grid,.steps,.offer-grid,.proof-board,.limit-list,.faq-grid{padding-left:20px; padding-right:20px}
   .truth-strip{padding:0 20px; margin-bottom:66px}
-  .problem,.system,.loop,.offers,.proof,.limits,.faq,.apply{padding-bottom:72px}
+  .problem,.system,.loop,.pricing,.offers,.proof,.limits,.faq,.apply{padding-bottom:72px}
+  .pricing{padding-left:20px; padding-right:20px}
+  .price-card{padding:20px}
+  .price-conversions{grid-template-columns:1fr}
   .apply{padding-left:20px; padding-right:20px}
   .apply-grid{padding:28px 22px}
   .segmented{gap:6px}
