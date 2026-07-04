@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Лидген под твою нишу · AI-система поиска клиентов · @iagadilov</title>
-<meta name="description" content="AI-система находит компании в твоей нише, вычисляет ЛПР и пишет персональный первый оффер каждому. Поток тёплых входящих без отдела продаж.">
+<title>AI LeadGen OS · курс + workspace для поиска B2B-клиентов · @iagadilov</title>
+<meta name="description" content="Практический видеокурс + готовый setup для Claude Code / Codex. Собери AI LeadGen workspace под свою нишу: ICP, small batch, scoring, review, memory и outreach drafts.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="theme-color" content="#0F0807">
+<meta name="theme-color" content="#F7F3EA">
 
-<meta property="og:title" content="Лидген под твою нишу - AI находит тебе клиентов">
-<meta property="og:description" content="Система сама ищет компании, находит ЛПР и пишет персональный первый оффер. Оставь заявку на внедрение.">
+<meta property="og:title" content="AI LeadGen OS - собери workspace для B2B-лидгена">
+<meta property="og:description" content="Не SaaS и не один промпт. Практический курс + setup для Claude Code / Codex: ICP, review, Memory Patch и outreach drafts под human approval.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://leadgen.gadilovtech.com">
 <meta property="og:image" content="https://leadgen.gadilovtech.com/og.png">
@@ -21,247 +21,287 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="grain" aria-hidden="true"></div>
-
-<!-- NAV -->
 <header class="nav">
   <a class="brand" href="#top">
-    <span class="brand-dot"></span>
-    <span>iagadilov</span>
+    <span class="brand-mark">OS</span>
+    <span>AI LeadGen OS</span>
   </a>
   <nav class="nav-links">
-    <a href="#how">Как работает</a>
-    <a href="#formats">Форматы</a>
-    <a class="nav-cta" href="#apply">Оставить заявку</a>
+    <a href="#system">Система</a>
+    <a href="#course">Курс</a>
+    <a href="#dfy">DFY</a>
+    <a class="nav-cta" href="#apply">Заявка</a>
   </nav>
 </header>
 
 <main id="top">
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="eyebrow reveal" style="--d:0ms">
-          <span class="pulse"></span> AI-система поиска клиентов
+          <span class="status-dot"></span>
+          видеокурс + workspace setup
         </div>
         <h1 class="reveal" style="--d:80ms">
-          Поток клиентов<br>
-          <span class="accent">без отдела продаж</span>
+          Собери AI LeadGen workspace под свою нишу
         </h1>
         <p class="lede reveal" style="--d:160ms">
-          Система сама находит компании в твоей нише, вычисляет
-          decision maker и пишет персональный первый оффер каждому.
-          Тебе остаются <span class="hl">тёплые ответы</span>.
+          AI LeadGen OS - это практический курс и готовый setup для Claude Code / Codex.
+          Ты собираешь систему, которая помогает описать ICP, найти B2B-лидов, провести review,
+          записать правила в memory и подготовить outreach drafts.
         </p>
         <div class="hero-actions reveal" style="--d:240ms">
-          <a class="btn btn-primary" href="#apply">
-            Оставить заявку на внедрение
+          <a class="btn btn-primary" href="#apply" data-intent="course">
+            Купить доступ к курсу
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
           </a>
-          <a class="btn btn-ghost" href="#how">Как это работает</a>
+          <a class="btn btn-ghost" href="#apply" data-intent="dfy">Оставить заявку на внедрение</a>
         </div>
         <div class="hero-trust reveal" style="--d:320ms">
-          <span>не шаблонный спам</span>
-          <span class="sep">/</span>
-          <span>оффер под конкретный бизнес</span>
-          <span class="sep">/</span>
-          <span>запуск за недели</span>
+          <span>не SaaS</span>
+          <span>не один промпт</span>
+          <span>draft-only до human approval</span>
         </div>
       </div>
 
-      <!-- Real system screenshots: dashboard + leads -->
-      <div class="hero-visual reveal" style="--d:400ms">
-        <div class="shots">
-          <figure class="shot-main">
-            <span class="shot-bar"><i></i><i></i><i></i></span>
-            <span class="shot-tag">пример работы</span>
-            <img src="assets/crm-dashboard.jpg" alt="Пример: лидген в работе">
-          </figure>
-          <figure class="shot-float">
-            <img src="assets/crm-leads.jpg" alt="Пример: база лидов">
-            <figcaption><span class="chip-dot"></span> 5 572 лида в одной нише</figcaption>
-          </figure>
+      <div class="workspace reveal" aria-label="Пример структуры AI LeadGen OS workspace" style="--d:360ms">
+        <div class="workspace-top">
+          <span class="window-dot blue"></span>
+          <span class="window-dot green"></span>
+          <span class="window-dot amber"></span>
+          <span class="workspace-title">ai-leadgen-os-template</span>
         </div>
-        <p class="shot-note">пример персонализированной работы под компанию, а не готовый продукт - систему собираю под тебя с нуля</p>
+        <div class="workspace-body">
+          <aside class="file-tree">
+            <div class="tree-item active">START_HERE.md</div>
+            <div class="tree-folder">docs/os</div>
+            <div class="tree-child">icp.md</div>
+            <div class="tree-child">negative_icp.md</div>
+            <div class="tree-child">outreach_rules.md</div>
+            <div class="tree-folder">memory</div>
+            <div class="tree-child">learned_rules.md</div>
+            <div class="tree-folder">commands</div>
+            <div class="tree-child">review-batch.md</div>
+            <div class="tree-folder">runs</div>
+          </aside>
+          <div class="workspace-panel">
+            <div class="panel-label">first safe loop</div>
+            <div class="flow">
+              <span>ICP</span>
+              <i></i>
+              <span>small batch</span>
+              <i></i>
+              <span>review</span>
+              <i></i>
+              <span>memory patch</span>
+              <i></i>
+              <span>drafts</span>
+            </div>
+            <div class="draft-card">
+              <div class="draft-head">
+                <span>outreach_draft.md</span>
+                <strong>approval_required: yes</strong>
+              </div>
+              <p>Персонализация только от evidence. Неподтверждённый сигнал - как гипотеза, не как факт.</p>
+            </div>
+            <div class="metric-row">
+              <div><strong>30%</strong><span>strong good</span></div>
+              <div><strong>70%</strong><span>usable</span></div>
+              <div><strong>0</strong><span>auto-send</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SHIFT -->
-  <section class="shift">
-    <div class="shift-col was">
-      <div class="shift-label">обычно</div>
-      <ul>
-        <li>руками искать компании по одной</li>
-        <li>часы на изучение каждой</li>
-        <li>один шаблон на всех, и тот в спам</li>
-        <li>чтобы масштабить - нужен отдел</li>
-      </ul>
-    </div>
-    <div class="shift-arrow" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-    </div>
-    <div class="shift-col now">
-      <div class="shift-label">с системой</div>
-      <ul>
-        <li>находит компании под нишу сама</li>
-        <li>изучает сайт, соцсети, приложение</li>
-        <li>персональный оффер под каждого</li>
-        <li>один билдер с AI на сотнях компаний</li>
-      </ul>
+  <section class="truth-strip">
+    <div>
+      <strong>Важно:</strong>
+      это не "клиенты на автомате". Продукт - практическая сборка workspace, где AI-агент работает по правилам, а человек принимает решения.
     </div>
   </section>
 
-  <!-- HOW -->
-  <section class="how" id="how">
+  <section class="problem">
     <div class="section-head">
-      <span class="kicker">Как работает</span>
-      <h2>Проходит весь путь до тёплого ответа</h2>
+      <span class="kicker">Почему старый подход ломается</span>
+      <h2>Лидген чаще умирает не на отправке, а на качестве входа</h2>
+    </div>
+    <div class="split-grid">
+      <article class="plain-block">
+        <h3>Обычно</h3>
+        <ul class="cross-list">
+          <li>ICP описан слишком широко</li>
+          <li>источники дают красивые, но пустые строки</li>
+          <li>персонализация придумывается</li>
+          <li>правки остаются в чате и забываются</li>
+          <li>масштабирование начинается до review</li>
+        </ul>
+      </article>
+      <article class="plain-block good">
+        <h3>В AI LeadGen OS</h3>
+        <ul class="check-list">
+          <li>один campaign profile на batch</li>
+          <li>evidence перед score</li>
+          <li>good / maybe / bad с причинами</li>
+          <li>Memory Patch вместо "запомни"</li>
+          <li>outreach только после human approval</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="system" id="system">
+    <div class="section-head">
+      <span class="kicker">Что собираем</span>
+      <h2>Не папку с промптами, а операционную систему процесса</h2>
+      <p>Template repo - это практический актив внутри курса. Он задаёт структуру, по которой агент перестаёт импровизировать.</p>
+    </div>
+    <div class="system-grid">
+      <article class="system-item">
+        <span>docs/os</span>
+        <h3>Правила бизнеса</h3>
+        <p>Company, offer, ICP, negative ICP, sources, outreach rules, success criteria и compliance.</p>
+      </article>
+      <article class="system-item">
+        <span>memory</span>
+        <h3>Обучение на review</h3>
+        <p>Good/bad examples, learned rules, tone и reply playbook. Правки владельца становятся файлами.</p>
+      </article>
+      <article class="system-item">
+        <span>commands</span>
+        <h3>Playbooks</h3>
+        <p>Onboard, find leads, enrich, score, review, learn from feedback, generate outreach, watch inbox.</p>
+      </article>
+      <article class="system-item">
+        <span>runs</span>
+        <h3>История кампаний</h3>
+        <p>Каждый batch живёт в отдельной папке: raw, enriched, scored, reviewed, drafts.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="loop">
+    <div class="section-head">
+      <span class="kicker">Рабочий цикл</span>
+      <h2>От ICP до драфтов без прыжка в спам</h2>
     </div>
     <div class="steps">
-      <article class="step">
-        <span class="step-num">01</span>
-        <div class="step-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-        </div>
-        <h3>Находит компании</h3>
-        <p>Собирает базу компаний под твою нишу и гео.</p>
-      </article>
-      <article class="step">
-        <span class="step-num">02</span>
-        <div class="step-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"/><path d="M3 12h18"/><path d="M3 17h12"/></svg>
-        </div>
-        <h3>Изучает бизнес</h3>
-        <p>Сайт, соцсети, приложение - понимает, чем живёт компания.</p>
-      </article>
-      <article class="step">
-        <span class="step-num">03</span>
-        <div class="step-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
-        </div>
-        <h3>Ищет ЛПР</h3>
-        <p>Где возможно - находит, кто принимает решение, и как до него дойти.</p>
-      </article>
-      <article class="step">
-        <span class="step-num">04</span>
-        <div class="step-ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        </div>
-        <h3>Пишет первым</h3>
-        <p>Персональный первый оффер под конкретный бизнес. Не шаблон.</p>
-      </article>
+      <article class="step"><span>01</span><h3>Define ICP</h3><p>Формулируем сегмент, сигналы покупки и negative ICP до поиска.</p></article>
+      <article class="step"><span>02</span><h3>Small batch</h3><p>10-20 лидов из источника. Один batch - один campaign profile.</p></article>
+      <article class="step"><span>03</span><h3>Evidence + scoring</h3><p>У каждого лида должен быть наблюдаемый факт и why_relevant.</p></article>
+      <article class="step"><span>04</span><h3>Review</h3><p>Человек размечает good / maybe / bad и объясняет причины.</p></article>
+      <article class="step"><span>05</span><h3>Memory Patch</h3><p>Фидбек записывается в docs/os и memory, а не остаётся в чате.</p></article>
+      <article class="step"><span>06</span><h3>Outreach drafts</h3><p>Только approved лиды. Каждое сообщение с approval_required: yes.</p></article>
     </div>
-    <p class="how-note">
-      Система берёт на себя поиск и первое касание. Живой диалог и закрытие
-      остаются за тобой - ты приходишь уже к тёплым ответам.
-    </p>
   </section>
 
-  <!-- PROOF: персонализация конвертит в созвон -->
-  <section class="proof">
-    <div class="section-head">
-      <span class="kicker">Что отвечают</span>
-      <h2>Персонализация под компанию приводит на созвон, а не в спам</h2>
-    </div>
-    <div class="chats">
-      <figure class="chat-card">
-        <img src="assets/chat-3.jpg" alt="Тёплый ответ: согласовали созвон">
-        <figcaption><span class="chip-dot"></span> передали контакт и назначили созвон</figcaption>
-      </figure>
-      <figure class="chat-card">
-        <img src="assets/chat-1.jpg" alt="Тёплый ответ: зовёт на созвон в тот же день">
-        <figcaption><span class="chip-dot"></span> зовёт на созвон в тот же день</figcaption>
-      </figure>
-      <figure class="chat-card">
-        <img src="assets/chat-2.jpg" alt="Тёплый ответ: назначили созвон на завтра">
-        <figcaption><span class="chip-dot"></span> назначили созвон на завтра</figcaption>
-      </figure>
-    </div>
-    <p class="proof-note">это ответы на первое сообщение системы. на массовые рассылки так не отвечают.</p>
-  </section>
-
-  <!-- FORMATS -->
-  <section class="formats" id="formats">
+  <section class="offers" id="course">
     <div class="section-head">
       <span class="kicker">Форматы</span>
-      <h2>Два способа зайти</h2>
+      <h2>Собрать самому или внедрить под команду</h2>
     </div>
-    <div class="cards cards-2">
-      <article class="card">
-        <div class="card-tag">пощупать</div>
-        <h3>База лидов под нишу</h3>
-        <p>Готовый список компаний в твоей нише с контактами и ЛПР, где возможно. Берёшь и пишешь сам - чтобы увидеть качество базы на деле.</p>
-        <ul class="ticks">
-          <li>реальные компании под твою нишу</li>
-          <li>контакты + ЛПР, где возможно</li>
-          <li>выгрузка, готовая к работе</li>
+    <div class="offer-grid">
+      <article class="offer-card primary-offer">
+        <div class="offer-tag">главный формат</div>
+        <h3>AI LeadGen OS Course</h3>
+        <p>Видеокурс + clean template repo. Ты проходишь setup, собираешь workspace под нишу и запускаешь первый безопасный leadgen loop.</p>
+        <ul class="check-list">
+          <li>видеоуроки и roadmap</li>
+          <li>template repo для Claude Code / Codex</li>
+          <li>docs/os, memory, commands, schema</li>
+          <li>example run и safety rules</li>
+          <li>draft-only outreach workflow</li>
         </ul>
+        <a class="btn btn-primary btn-block" href="#apply" data-intent="course">Купить доступ к курсу</a>
       </article>
-      <article class="card card-feature">
-        <div class="card-tag accent-tag">под себя</div>
-        <h3>Система под твой бизнес</h3>
-        <p>Собираю под тебя: находит компании, изучает их, пишет персональный первый оффер каждому и отправляет в твоём канале. Сам выбираешь мессенджер и как гоняем - гибко под твой процесс. Детали и вилку разбираем на звонке.</p>
-        <ul class="ticks">
-          <li>всё из «Базы лидов», плюс:</li>
-          <li>персональное первое сообщение под каждого</li>
-          <li>твой канал рассылки на выбор: WhatsApp / Telegram / Email</li>
-          <li>собирается под твой процесс - гибко</li>
-          <li>сам гоняешь или веду за тебя</li>
+      <article class="offer-card" id="dfy">
+        <div class="offer-tag">для команды</div>
+        <h3>Done For You</h3>
+        <p>Если не хочешь собирать сам, я адаптирую AI LeadGen OS под твой бизнес: ICP, sources, test batch, review, memory и drafts.</p>
+        <ul class="check-list">
+          <li>разбор ниши и оффера</li>
+          <li>первый test batch</li>
+          <li>scoring/review/memory setup</li>
+          <li>outreach drafts для approved лидов</li>
+          <li>передача процесса команде</li>
         </ul>
+        <a class="btn btn-secondary btn-block" href="#apply" data-intent="dfy">Оставить заявку на внедрение</a>
       </article>
     </div>
   </section>
 
-  <!-- WHY -->
-  <section class="why">
-    <div class="why-inner">
-      <div class="why-photo">
-        <img src="assets/founder-hongkong.jpg" alt="Ильяс Агадилов">
+  <section class="proof">
+    <div class="section-head">
+      <span class="kicker">Proof run</span>
+      <h2>Внутри есть пример первого цикла на вымышленных компаниях</h2>
+      <p>Он показывает не "идеальный список", а механику: scored leads, review labels, Memory Patch Summary, outreach drafts и план дообогащения maybe-лидов.</p>
+    </div>
+    <div class="proof-board">
+      <div class="proof-col">
+        <span class="proof-label">review metrics</span>
+        <div class="big-metric">30 / 70 / 30</div>
+        <p>strong good / usable candidate / bad. Метрики считаются честной тройкой, не одной красивой цифрой.</p>
       </div>
-      <div class="why-text">
-        <span class="kicker">Кто строит</span>
-        <h2>Я не просто пишу код. Я <span class="accent">строю системы</span>.</h2>
-        <p>
-          Предприниматель-билдер. Свои продукты в App Store, свой бизнес, реальные клиенты.
-          Знаю боли бизнеса изнутри - поэтому строю то, что реально работает, а не «попробуем».
-        </p>
-        <p class="why-sign">Ильяс Агадилов · @iagadilov</p>
+      <div class="proof-col">
+        <span class="proof-label">memory patch</span>
+        <p>Причины из review превращаются в правила: что считать good, какие leads отправлять в needs_enrichment, какие источники режут качество.</p>
+      </div>
+      <div class="proof-col">
+        <span class="proof-label">drafts only</span>
+        <p>Outreach появляется только после review. Каждый draft содержит evidence_used и approval_required: yes.</p>
       </div>
     </div>
   </section>
 
-  <!-- APPLY -->
+  <section class="limits">
+    <div class="section-head">
+      <span class="kicker">Честные ограничения</span>
+      <h2>Что я не обещаю</h2>
+    </div>
+    <div class="limit-list">
+      <span>гарантированные продажи</span>
+      <span>100% ЛПР</span>
+      <span>автономного робота</span>
+      <span>что любая ниша сработает</span>
+      <span>отправку без проверки</span>
+      <span>массовый спам</span>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="section-head">
+      <span class="kicker">FAQ</span>
+      <h2>Самые частые вопросы</h2>
+    </div>
+    <div class="faq-grid">
+      <article><h3>Это SaaS?</h3><p>Нет. Это курс + workspace setup. Ты работаешь в Claude Code / Codex с template repo.</p></article>
+      <article><h3>Это просто промпты?</h3><p>Нет. Commands - только интерфейс. Продукт - структура, review loop, memory, schema и safety gates.</p></article>
+      <article><h3>Будут клиенты после курса?</h3><p>Курс не гарантирует продажи. Он даёт процесс поиска, проверки и подготовки outreach.</p></article>
+      <article><h3>Можно сразу отправлять?</h3><p>Нет. По умолчанию drafts-only. Отправка - отдельный human approval по списку, тексту, каналу и объёму.</p></article>
+    </div>
+  </section>
+
   <section class="apply" id="apply">
     <div class="apply-grid">
       <div class="apply-copy">
-        <span class="kicker">Заявка на внедрение</span>
-        <h2>Расскажи нишу - покажу, как это будет у тебя</h2>
+        <span class="kicker">Следующий шаг</span>
+        <h2>Выбери формат: курс или внедрение</h2>
         <p>
-          Оставь контакт, и я свяжусь, чтобы разобрать твою нишу: кого ловим,
-          в каком канале и какая вилка под твой кейс.
+          Оставь контакт. Я пришлю детали раннего доступа к курсу или разберу,
+          подходит ли твоя ниша под DFY-внедрение.
         </p>
         <ul class="apply-points">
-          <li>
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>
-            Разбор ниши, без воды
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>
-            Без давления и спама
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>
-            Отвечаю лично
-          </li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>Без обещаний "клиентов на автомате"</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>Курс = собрать самому</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>DFY = адаптировать под команду</li>
         </ul>
       </div>
 
@@ -272,31 +312,31 @@
         </div>
 
         <div class="field">
-          <label>Ты</label>
-          <div class="segmented" role="radiogroup" aria-label="Тип заявителя">
-            <input type="radio" id="ty-biz" name="type" value="Бизнес/продукт - нужны B2B-клиенты" checked>
-            <label for="ty-biz">Бизнес</label>
-            <input type="radio" id="ty-ag" name="type" value="Агентство/специалист - ищу клиентов на услуги">
-            <label for="ty-ag">Агентство</label>
-            <input type="radio" id="ty-prod" name="type" value="AI/IT-продукт - ищу клиентов">
-            <label for="ty-prod">AI/IT-продукт</label>
+          <label>Что ближе сейчас</label>
+          <div class="segmented" role="radiogroup" aria-label="Формат">
+            <input type="radio" id="ty-course" name="type" value="Курс AI LeadGen OS - хочу собрать сам" checked>
+            <label for="ty-course">Курс</label>
+            <input type="radio" id="ty-review" name="type" value="Курс + review/support">
+            <label for="ty-review">Курс + review</label>
+            <input type="radio" id="ty-dfy" name="type" value="DFY внедрение AI LeadGen OS">
+            <label for="ty-dfy">DFY</label>
           </div>
-          <span class="field-hint">Бизнес - нужны B2B-клиенты &middot; Агентство/спец - ищу клиентов на свои услуги</span>
+          <span class="field-hint">Курс - собрать workspace самому. DFY - внедрение под бизнес/команду.</span>
         </div>
 
         <div class="field">
-          <label for="niche">Чем занимаешься / что продаёшь</label>
-          <input id="niche" name="niche" type="text" placeholder="напр. таргет-агентство, опт пиломатериалов, AI-чатботы" required>
+          <label for="niche">Что продаёшь / какая ниша</label>
+          <input id="niche" name="niche" type="text" placeholder="напр. маркетинг-агентство, B2B-сервис, опт, AI-продукт" required>
         </div>
 
         <div class="field">
-          <label for="target">Кого ищем <span class="opt">(твой идеальный клиент)</span></label>
-          <textarea id="target" name="target" rows="3" placeholder="ниша + кто принимает решение. напр. стоматологии, владелец / стройкомпании, прораб-закупщик" required></textarea>
+          <label for="target">Кого хочешь находить</label>
+          <textarea id="target" name="target" rows="3" placeholder="кто идеальный клиент, какая роль ЛПР, какие сигналы покупки важны" required></textarea>
         </div>
 
         <div class="field">
-          <label for="geo">Гео поиска</label>
-          <input id="geo" name="geo" type="text" placeholder="напр. Алматы, вся РФ, США" required>
+          <label for="geo">Гео</label>
+          <input id="geo" name="geo" type="text" placeholder="напр. Казахстан, РФ, США, весь мир" required>
         </div>
 
         <div class="field">
@@ -319,39 +359,36 @@
         </div>
 
         <div class="field">
-          <label for="hook">Что зацепило в видео? <span class="opt">(необязательно)</span></label>
+          <label for="hook">Что хочешь получить? <span class="opt">(необязательно)</span></label>
           <div class="select-wrap">
             <select id="hook" name="hook">
               <option value="">- выбери -</option>
-              <option value="Что система сама находит клиентов">Что система сама находит клиентов</option>
-              <option value="Находит ЛПР (кто принимает решение)">Находит ЛПР (кто принимает решение)</option>
-              <option value="Персональные сообщения, а не спам">Персональные сообщения, а не спам</option>
-              <option value="Подхватывает и ведёт диалог">Подхватывает и ведёт диалог</option>
-              <option value="Что это собрал один человек на AI">Что это собрал один человек на AI</option>
-              <option value="Другое">Другое</option>
+              <option value="Понять, как устроен AI LeadGen OS">Понять, как устроен AI LeadGen OS</option>
+              <option value="Собрать workspace под свою нишу">Собрать workspace под свою нишу</option>
+              <option value="Получить template repo и уроки">Получить template repo и уроки</option>
+              <option value="Внедрить систему под команду">Внедрить систему под команду</option>
+              <option value="Проверить нишу test batch">Проверить нишу test batch</option>
             </select>
             <svg class="select-caret" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
         </div>
 
-        <!-- honeypot -->
         <input type="text" name="company_url" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
-          <span class="btn-label">Отправить заявку</span>
+          <span class="btn-label">Отправить</span>
           <span class="btn-spin" aria-hidden="true"></span>
         </button>
-        <p class="form-fine">Отвечу в течение дня. Никакого спама.</p>
+        <p class="form-fine">Отвечу лично. Без спама и без авторассылок.</p>
         <p class="form-error" id="formError" role="alert"></p>
       </form>
 
-      <!-- success state -->
       <div class="apply-form apply-done" id="leadDone" hidden>
         <div class="done-ico">
           <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>
         </div>
         <h3>Заявка отправлена</h3>
-        <p>Я уже получил уведомление и свяжусь с тобой. А пока можешь написать напрямую - так быстрее.</p>
+        <p>Я получил уведомление и свяжусь с тобой. Если хочешь быстрее - напиши напрямую в Telegram.</p>
         <a class="btn btn-ghost btn-block" href="https://t.me/iagadilov" target="_blank" rel="noopener">Написать в Telegram</a>
       </div>
     </div>
@@ -361,8 +398,8 @@
 
 <footer class="foot">
   <div class="foot-inner">
-    <span>iagadilov</span>
-    <span class="foot-mid">AI-системы для бизнеса</span>
+    <span>AI LeadGen OS</span>
+    <span class="foot-mid">курс + workspace для B2B-лидгена</span>
     <div class="foot-links">
       <a href="https://t.me/iagadilov" target="_blank" rel="noopener">Telegram</a>
       <a href="https://instagram.com/iagadilov" target="_blank" rel="noopener">Instagram</a>
@@ -372,8 +409,14 @@
 
 <script src="app.js"></script>
 
-<!-- Vercel Web Analytics (статичный сайт - через тег, не npm) -->
-<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
-<script defer src="/_vercel/insights/script.js"></script>
+<script>
+window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};
+if (!['localhost','127.0.0.1'].includes(location.hostname)) {
+  const s=document.createElement('script');
+  s.defer=true;
+  s.src='/_vercel/insights/script.js';
+  document.head.appendChild(s);
+}
+</script>
 </body>
 </html>

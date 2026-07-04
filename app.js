@@ -1,12 +1,17 @@
-// Лидген landing - form submit + scroll reveals + analytics
+// AI LeadGen OS landing - form submit + scroll reveals + analytics
 
 // ---- Analytics (Vercel Web Analytics custom events) ----
 function track(name, data) {
   if (window.va) window.va('event', data ? { name, data } : { name });
 }
-// клики по любой кнопке "оставить заявку" (hero + nav)
+// CTA clicks + intent preselect
 document.querySelectorAll('a[href="#apply"]').forEach((a) => {
-  a.addEventListener('click', () => track('cta_apply_click'));
+  a.addEventListener('click', () => {
+    const intent = a.dataset.intent;
+    if (intent === 'course') document.getElementById('ty-course')?.click();
+    if (intent === 'dfy') document.getElementById('ty-dfy')?.click();
+    track('cta_apply_click', intent ? { intent } : undefined);
+  });
 });
 
 // ---- Scroll reveal ----
@@ -16,7 +21,7 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.14 });
 
-document.querySelectorAll('.step, .card, .shift-col, .section-head, .why-inner, .how-note, .chat-card, .proof-note')
+document.querySelectorAll('.step, .system-item, .plain-block, .offer-card, .section-head, .proof-col, .limit-list span, .faq-grid article, .truth-strip')
   .forEach((el) => { el.classList.add('in-view'); io.observe(el); });
 
 // ---- Form ----
@@ -45,7 +50,7 @@ form.addEventListener('submit', async (e) => {
   };
 
   if (!data.name || !data.contact || !data.niche || !data.geo || !data.target) {
-    errEl.textContent = 'Заполни имя, чем занимаешься, кого ищем, гео и контакт';
+    errEl.textContent = 'Заполни имя, нишу, кого ищем, гео и контакт';
     return;
   }
 
