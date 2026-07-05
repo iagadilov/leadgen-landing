@@ -394,6 +394,17 @@ section{position:relative; z-index:2}
   white-space:nowrap;
   font-size:18px;
 }
+.price-conversion{
+  color:var(--muted);
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:.01em;
+  margin-top:-10px;
+}
+.card-top + .price-conversion{
+  align-self:flex-end;
+  margin-top:-14px;
+}
 .offer-tag{
   width:max-content;
   color:var(--amber);
@@ -585,6 +596,10 @@ section{position:relative; z-index:2}
   font-size:42px;
   line-height:1;
   font-weight:700;
+}
+.tier-price + .price-conversion{
+  margin-top:-12px;
+  color:var(--amber-2);
 }
 .tier-card .btn{margin-top:auto}
 
