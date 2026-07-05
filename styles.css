@@ -571,6 +571,42 @@ section{position:relative}
   margin-top:-2px;
 }
 
+.pricing-grid{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 28px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.tier-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  min-height:100%;
+}
+.primary-tier{
+  border-color:#AEBEFA;
+  box-shadow:var(--shadow);
+}
+.tier-card h3{font-size:31px}
+.tier-card p{
+  color:var(--muted);
+  font-size:16px;
+}
+.tier-card .btn{margin-top:auto}
+.tier-price{
+  font-family:'Clash Display';
+  font-size:42px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:0;
+}
+
 .offer-grid{
   max-width:var(--maxw);
   margin:0 auto;
@@ -892,7 +928,7 @@ section{position:relative}
 /* RESPONSIVE */
 @media (max-width:980px){
   .hero-inner,.split-grid,.offer-grid,.apply-grid{grid-template-columns:1fr}
-  .price-card{grid-template-columns:1fr}
+  .price-card,.pricing-grid{grid-template-columns:1fr}
   .price-conversions{grid-template-columns:repeat(3,1fr)}
   .system-grid{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr)}
@@ -912,10 +948,11 @@ section{position:relative}
   .flow{display:grid; grid-template-columns:1fr}
   .flow i{display:none}
   .metric-row,.system-grid,.steps,.faq-grid{grid-template-columns:1fr}
-  .section-head,.split-grid,.system-grid,.steps,.offer-grid,.proof-board,.limit-list,.faq-grid{padding-left:20px; padding-right:20px}
+  .section-head,.split-grid,.system-grid,.steps,.offer-grid,.proof-board,.limit-list,.faq-grid,.pricing-grid{padding-left:20px; padding-right:20px}
   .truth-strip{padding:0 20px; margin-bottom:66px}
   .problem,.system,.loop,.pricing,.offers,.proof,.limits,.faq,.apply{padding-bottom:72px}
   .pricing{padding-left:20px; padding-right:20px}
+  .pricing-grid{padding-left:0; padding-right:0}
   .price-card{padding:20px}
   .price-conversions{grid-template-columns:1fr}
   .apply{padding-left:20px; padding-right:20px}

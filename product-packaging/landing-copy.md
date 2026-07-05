@@ -3,10 +3,10 @@
 ## Hero
 
 **Headline:**  
-Собери AI LeadGen workspace под свою нишу
+Пройди обучение и собери AI LeadGen OS под свою нишу
 
 **Subheadline:**  
-AI LeadGen OS - это видеокурс + готовый setup для Claude Code / Codex. Ты собираешь систему, которая помогает описать ICP, найти B2B-лидов, проверить evidence, провести review, записать правила в memory и подготовить персональные outreach drafts.
+Видеокурс + готовый репозиторий для Claude Code / Codex: ICP, поиск лидов, scoring, review, Memory Patch и персональные outreach drafts.
 
 **Primary CTA:** Купить доступ к курсу  
 **Secondary CTA:** Оставить заявку на внедрение
@@ -74,13 +74,20 @@ AI LeadGen OS - это видеокурс + готовый setup для Claude C
 Ты не покупаешь "промпты". Ты проходишь практический процесс и собираешь workspace, который можно адаптировать под свой бизнес.
 
 **Early Access price:**  
-100 000 ₸ за место.
-
-Ориентир по курсу НБК на 05.07.2026: ≈ $212 / €185 / ₽16 400.
-
-После early access цена будет 200 000 ₸ за место (≈ $424 / €370 / ₽32 700).
+99 000 ₸ за место.
 
 **CTA:** Купить доступ к курсу
+
+## Tariffs
+
+1. **Early Access Course** - 99 000 ₸  
+   Видеокурс + готовый репозиторий для Claude Code / Codex. Студент собирает AI LeadGen OS сам под свою нишу.
+
+2. **Course + Review** - 299 000 ₸  
+   Курс + review первого `docs/os` setup и первого batch: ICP, evidence, scoring, Memory Patch и рекомендации по next batch.
+
+3. **Done For You** - от 1 500 000 ₸ / заявка  
+   Внедрение AI LeadGen OS под бизнес/команду: ICP, sources, scoring, test batch, review, Memory Patch, drafts и handoff процесса.
 
 ## What Is Inside The Course
 

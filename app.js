@@ -9,6 +9,7 @@ document.querySelectorAll('a[href="#apply"]').forEach((a) => {
   a.addEventListener('click', () => {
     const intent = a.dataset.intent;
     if (intent === 'course') document.getElementById('ty-course')?.click();
+    if (intent === 'review') document.getElementById('ty-review')?.click();
     if (intent === 'dfy') document.getElementById('ty-dfy')?.click();
     track('cta_apply_click', intent ? { intent } : undefined);
   });
