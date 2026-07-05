@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
   const hook = String(body.hook || '').slice(0, 120).trim();
   const page = String(body.page || '').slice(0, 300).trim();
 
-  if (!name || !contact || !niche || !geo || !target) {
+  if (!name || !contact) {
     return res.status(400).json({ ok: false, error: 'missing_fields' });
   }
 
@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
 
   if (!token || !chatId) {
     // Не валим UX, но честно логируем в серверные логи Vercel
-    console.error('Lead received but TELEGRAM env not set:', { name, channel, contact, niche });
+    console.error('Lead received but TELEGRAM env not set:', { name, channel, contact, type });
     return res.status(200).json({ ok: true, warning: 'no_telegram_configured' });
   }
 
@@ -45,11 +45,11 @@ module.exports = async (req, res) => {
     `🟠 <b>Новая заявка на лидген</b>\n\n` +
     `<b>Имя:</b> ${esc(name)}\n` +
     (type ? `<b>Тип:</b> ${esc(type)}\n` : '') +
-    `<b>Чем занимается:</b> ${esc(niche)}\n` +
-    `<b>Кого ищем:</b> ${esc(target)}\n` +
-    `<b>Гео:</b> ${esc(geo)}\n` +
     `<b>Канал:</b> ${esc(channel)}\n` +
     `<b>Контакт:</b> ${esc(contact)}\n` +
+    (niche ? `<b>Чем занимается:</b> ${esc(niche)}\n` : '') +
+    (target ? `<b>Кого ищем:</b> ${esc(target)}\n` : '') +
+    (geo ? `<b>Гео:</b> ${esc(geo)}\n` : '') +
     (hook ? `<b>Зацепило в видео:</b> ${esc(hook)}\n` : '') +
     (page ? `\n<i>${esc(page)}</i>` : '');
 
