@@ -22,7 +22,7 @@ const io = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.14 });
 
-document.querySelectorAll('.step, .system-item, .plain-block, .offer-card, .section-head, .proof-col, .limit-list span, .faq-grid article, .truth-strip')
+document.querySelectorAll('.path-card, .module-grid article, .output-card, .tier-card, .section-head, .chat-card, .faq-grid article, .why-inner')
   .forEach((el) => { el.classList.add('in-view'); io.observe(el); });
 
 // ---- Form ----

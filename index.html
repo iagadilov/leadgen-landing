@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI LeadGen OS · видеокурс + setup для Claude Code / Codex · @iagadilov</title>
-<meta name="description" content="Пройди обучение и собери AI LeadGen OS под свою нишу: видеокурс + готовый репозиторий для Claude Code / Codex, ICP, scoring, review, Memory Patch и outreach drafts.">
+<title>AI LeadGen OS · готовый setup для поиска B2B-лидов · @iagadilov</title>
+<meta name="description" content="Собери себе AI-систему, которая находит лидов персонализировано под твою нишу. Готовый setup для Claude Code / Codex и agentic LLM: лиды, контакты, угол захода и outreach drafts.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="theme-color" content="#F7F3EA">
+<meta name="theme-color" content="#0F0807">
 
-<meta property="og:title" content="AI LeadGen OS - курс + setup для B2B-лидгена">
-<meta property="og:description" content="Пройди обучение и собери свою систему поиска B2B-клиентов под нишу. Не SaaS, не кнопка клиентов, outreach только draft-only до human approval.">
+<meta property="og:title" content="AI LeadGen OS - лиды под твою нишу">
+<meta property="og:description" content="Готовый setup + обучение или DFY-внедрение: поиск лидов, фильтрация, контакты, угол захода и персональный outreach.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://leadgen.gadilovtech.com">
 <meta property="og:image" content="https://leadgen.gadilovtech.com/og.png">
@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="grain" aria-hidden="true"></div>
 
 <header class="nav">
   <a class="brand" href="#top">
@@ -33,11 +34,10 @@
     <span>AI LeadGen OS</span>
   </a>
   <nav class="nav-links">
-    <a href="#video">Видео</a>
-    <a href="#course">Курс</a>
+    <a href="#paths">Форматы</a>
+    <a href="#inside">Что внутри</a>
     <a href="#pricing">Тарифы</a>
-    <a href="#dfy">DFY</a>
-    <a class="nav-cta" href="#apply">Купить</a>
+    <a href="#apply" class="nav-cta" data-intent="course">Я в деле</a>
   </nav>
 </header>
 
@@ -47,348 +47,237 @@
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="eyebrow reveal" style="--d:0ms">
-          <span class="status-dot"></span>
-          видеокурс + workspace setup
+          <span class="pulse"></span>
+          готовый leadgen setup + обучение
         </div>
         <h1 class="reveal" style="--d:80ms">
-          Пройди обучение и собери AI LeadGen OS под свою нишу
+          Собери себе AI-систему, которая персонально находит лидов под твою нишу
         </h1>
         <p class="lede reveal" style="--d:160ms">
-          Видеокурс + готовый репозиторий для Claude Code / Codex: ICP, поиск лидов,
-          scoring, review, Memory Patch и персональные outreach drafts.
+          Получаешь готовый setup и запускаешь его у себя в Claude Code, Codex или другой agentic LLM.
+          На выходе: отфильтрованные B2B-лиды, контакты, угол захода и персональный outreach draft под каждого.
         </p>
         <div class="hero-actions reveal" style="--d:240ms">
           <a class="btn btn-primary" href="#apply" data-intent="course">
-            Купить доступ к курсу
+            Я в деле
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
           </a>
-          <a class="btn btn-ghost" href="#apply" data-intent="dfy">Оставить заявку на внедрение</a>
+          <a class="btn btn-ghost" href="#apply" data-intent="dfy">Собрать под меня</a>
         </div>
         <div class="hero-trust reveal" style="--d:320ms">
-          <span>не SaaS</span>
-          <span>не кнопка клиентов</span>
-          <span>draft-only до human approval</span>
+          <span>под твою нишу</span>
+          <span>с твоими источниками</span>
+          <span>outreach draft-only до approval</span>
         </div>
       </div>
 
-      <div class="workspace reveal" aria-label="Пример структуры AI LeadGen OS workspace" style="--d:360ms">
-        <div class="workspace-top">
-          <span class="window-dot blue"></span>
-          <span class="window-dot green"></span>
-          <span class="window-dot amber"></span>
-          <span class="workspace-title">ai-leadgen-os-template</span>
+      <div class="hero-visual reveal" style="--d:380ms" aria-label="Примеры лидген-системы и ответов">
+        <figure class="shot-main">
+          <span class="shot-bar"><i></i><i></i><i></i></span>
+          <span class="shot-tag">пример результата</span>
+          <img src="assets/crm-dashboard.jpg" alt="Пример AI LeadGen OS dashboard">
+        </figure>
+        <figure class="shot-float">
+          <img src="assets/crm-leads.jpg" alt="Пример списка лидов">
+          <figcaption><span class="chip-dot"></span> лиды, score, контакты, next action</figcaption>
+        </figure>
+        <figure class="chat-float">
+          <img src="assets/chat-3.jpg" alt="Пример тёплого ответа">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="paths" id="paths">
+    <div class="section-head">
+      <span class="kicker">Два способа зайти</span>
+      <h2>Можно собрать самому на готовом setup. Можно отдать мне внедрение.</h2>
+      <p>
+        Это не SaaS, потому что у всех разные ниши, источники, гео, офферы и каналы outreach.
+        Универсальная кнопка здесь быстро превращается в мусор. Поэтому продукт упакован как настраиваемая система:
+        ты либо адаптируешь её под себя, либо я собираю её под твой бизнес.
+      </p>
+    </div>
+    <div class="path-grid">
+      <article class="path-card product-card">
+        <div class="card-top">
+          <span class="offer-tag">продукт + обучение</span>
+          <strong>99 000 ₸</strong>
         </div>
-        <div class="workspace-body">
-          <aside class="file-tree">
-            <div class="tree-item active">START_HERE.md</div>
-            <div class="tree-folder">docs/os</div>
-            <div class="tree-child">icp.md</div>
-            <div class="tree-child">negative_icp.md</div>
-            <div class="tree-child">outreach_rules.md</div>
-            <div class="tree-folder">memory</div>
-            <div class="tree-child">learned_rules.md</div>
-            <div class="tree-folder">commands</div>
-            <div class="tree-child">review-batch.md</div>
-            <div class="tree-folder">runs</div>
-          </aside>
-          <div class="workspace-panel">
-            <div class="panel-label">first safe loop</div>
-            <div class="flow">
-              <span>ICP</span>
-              <i></i>
-              <span>small batch</span>
-              <i></i>
-              <span>review</span>
-              <i></i>
-              <span>Memory Patch</span>
-              <i></i>
-              <span>drafts</span>
-            </div>
-            <div class="draft-card">
-              <div class="draft-head">
-                <span>outreach_draft.md</span>
-                <strong>approval_required: yes</strong>
-              </div>
-              <p>Персонализация только от evidence. Неподтверждённый сигнал - как гипотеза, не как факт.</p>
-            </div>
-            <div class="metric-row">
-              <div><strong>30%</strong><span>strong good</span></div>
-              <div><strong>70%</strong><span>usable</span></div>
-              <div><strong>0</strong><span>auto-send</span></div>
-            </div>
-          </div>
+        <h3>Получаешь готовый setup и учишься запускать его под свою нишу</h3>
+        <p>Открываешь репозиторий в Claude Code / Codex, заполняешь свой ICP, источники, правила фильтрации и запускаешь первый batch.</p>
+        <ul class="ticks">
+          <li>готовая структура workspace</li>
+          <li>обучение, как пользоваться из коробки</li>
+          <li>модули ICP, sources, scoring, review, Memory Patch</li>
+          <li>персональные outreach drafts после отбора</li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="#apply" data-intent="course">Я в деле</a>
+      </article>
+
+      <article class="path-card dfy-card">
+        <div class="card-top">
+          <span class="offer-tag">done for you</span>
+          <strong>от 1 500 000 ₸</strong>
+        </div>
+        <h3>Я кастомно собираю AI LeadGen OS под твой бизнес и остаюсь на связи</h3>
+        <p>Разбираю нишу, оффер, источники, каналы, запускаю test batch, настраиваю review и передаю рабочий процесс.</p>
+        <ul class="ticks">
+          <li>кастомный ICP и negative ICP</li>
+          <li>подбор источников и scoring под нишу</li>
+          <li>первый batch и разбор качества</li>
+          <li>handoff команде + связь со мной</li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="#apply" data-intent="dfy">Собрать под меня</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="inside" id="inside">
+    <div class="section-head">
+      <span class="kicker">Что ты получишь</span>
+      <h2>Внутри не “курс по промптам”, а система из модулей</h2>
+    </div>
+
+    <div class="tabs">
+      <input type="radio" id="tab-product" name="inside-tabs" checked>
+      <label for="tab-product">Что внутри продукта</label>
+      <input type="radio" id="tab-dfy" name="inside-tabs">
+      <label for="tab-dfy">Что внутри DFY</label>
+
+      <div class="tab-panel panel-product">
+        <div class="module-grid">
+          <article><span>01</span><h3>Setup repo</h3><p>Готовая структура для agentic LLM: docs, memory, commands, runs и lead schema.</p></article>
+          <article><span>02</span><h3>ICP module</h3><p>Описание ниши, кого искать, кого исключать, какие buying signals важны.</p></article>
+          <article><span>03</span><h3>Sources module</h3><p>Как подключать свои источники данных: сайты, каталоги, CRM, таблицы, ручные списки.</p></article>
+          <article><span>04</span><h3>Scoring + review</h3><p>Фильтрация лидов, причины score, good / maybe / bad и обновление правил.</p></article>
+          <article><span>05</span><h3>Memory Patch</h3><p>Фидбек не теряется в чате: система учится на твоих решениях и следующих batch.</p></article>
+          <article><span>06</span><h3>Outreach drafts</h3><p>Угол захода и персональный текст под каждого approved лида. Без автоотправки.</p></article>
+        </div>
+      </div>
+
+      <div class="tab-panel panel-dfy">
+        <div class="module-grid">
+          <article><span>01</span><h3>Диагностика</h3><p>Разбираю оффер, чек, гео, сегменты, текущие источники и каналы продаж.</p></article>
+          <article><span>02</span><h3>Кастомный setup</h3><p>Собираю правила, scoring, sources, review loop и memory под твою нишу.</p></article>
+          <article><span>03</span><h3>Test batch</h3><p>Проверяем качество на маленьком batch до масштаба, а не строим систему вслепую.</p></article>
+          <article><span>04</span><h3>Разбор со мной</h3><p>Показываю, почему лиды good / maybe / bad и как улучшать следующий заход.</p></article>
+          <article><span>05</span><h3>Drafts + handoff</h3><p>Передаю команде лиды, контакты, угол захода, drafts и понятный рабочий процесс.</p></article>
+          <article><span>06</span><h3>Связь</h3><p>Я рядом на этапе внедрения: помогаю докрутить источники, критерии и первые циклы.</p></article>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="truth-strip">
-    <div>
-      <strong>Главная идея:</strong>
-      это обучение, где ты руками собираешь leadgen workspace под свою нишу. Репозиторий - актив внутри курса, а не продукт вместо курса.
+  <section class="flow-section">
+    <div class="section-head">
+      <span class="kicker">На выходе</span>
+      <h2>Не “список компаний”, а понятный заход к каждой</h2>
+    </div>
+    <div class="output-grid">
+      <article class="output-card"><span>lead</span><h3>Отфильтрованные лиды</h3><p>Компании, которые подходят под твой ICP, а не просто совпали по категории.</p></article>
+      <article class="output-card"><span>contact</span><h3>Контакты и путь связи</h3><p>Сайт, соцсети, email/телефон или другой доступный контактный путь.</p></article>
+      <article class="output-card"><span>angle</span><h3>Угол захода</h3><p>Почему именно им можно написать и на какой наблюдаемый факт опереться.</p></article>
+      <article class="output-card"><span>draft</span><h3>Персональный outreach</h3><p>Черновик сообщения под конкретный бизнес, который человек финально апрувит.</p></article>
     </div>
   </section>
 
-  <section class="problem" id="video">
+  <section class="proof">
     <div class="section-head">
-      <span class="kicker">Что ты видел в видео</span>
-      <h2>На видео это выглядело как AI-система поиска клиентов. Внутри это учебный setup.</h2>
-      <p>Я показывал, как агент помогает описать нишу, найти первый batch, проверить evidence, разметить лидов и подготовить персональные драфты. Это не закрытый SaaS, который обещает поток клиентов после клика.</p>
+      <span class="kicker">Живые сигналы</span>
+      <h2>Персональный заход выглядит иначе, чем массовая рассылка</h2>
     </div>
-    <div class="split-grid">
-      <article class="plain-block">
-        <h3>Что видно снаружи</h3>
-        <ul class="cross-list">
-          <li>AI нашёл компании</li>
-          <li>поставил score</li>
-          <li>объяснил why relevant</li>
-          <li>подготовил заходы</li>
-          <li>выглядит как готовая система</li>
-        </ul>
-      </article>
-      <article class="plain-block good">
-        <h3>Что на самом деле важно</h3>
-        <ul class="check-list">
-          <li>правильно описанный ICP</li>
-          <li>маленький batch до масштаба</li>
-          <li>evidence до персонализации</li>
-          <li>review от человека</li>
-          <li>Memory Patch после ошибок</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section class="system" id="not-saas">
-    <div class="section-head">
-      <span class="kicker">Почему это не SaaS</span>
-      <h2>AI LeadGen OS - не "кнопка клиентов" и не готовый робот вместо тебя</h2>
-      <p>Курс учит собирать управляемую систему в Claude Code / Codex. Агент помогает искать, проверять и готовить drafts, но решение по качеству, тону, списку и отправке остаётся за человеком.</p>
-    </div>
-    <div class="system-grid">
-      <article class="system-item">
-        <span>не SaaS</span>
-        <h3>Без личного кабинета с магией</h3>
-        <p>Ты работаешь в репозитории, где правила бизнеса видны в файлах и меняются осознанно.</p>
-      </article>
-      <article class="system-item">
-        <span>не база</span>
-        <h3>Лиды не появляются "из воздуха"</h3>
-        <p>Сначала ICP и источники, потом small batch, evidence, scoring и review.</p>
-      </article>
-      <article class="system-item">
-        <span>не авто-send</span>
-        <h3>Outreach только draft-only</h3>
-        <p>Драфты готовятся для approved лидов. Отправка - отдельный human approval.</p>
-      </article>
-      <article class="system-item">
-        <span>не промпты</span>
-        <h3>Template repo - часть курса</h3>
-        <p>Репозиторий нужен, чтобы практиковаться и собрать систему под свою нишу, а не просто скачать файлы.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="system" id="course">
-    <div class="section-head">
-      <span class="kicker">Что ты соберёшь внутри курса</span>
-      <h2>Рабочий AI LeadGen workspace с правилами, memory и безопасным циклом</h2>
-      <p>После уроков у тебя будет не абстрактное понимание AI, а структура, которую можно открыть в Claude Code / Codex и адаптировать под свой оффер.</p>
-    </div>
-    <div class="system-grid">
-      <article class="system-item">
-        <span>docs/os</span>
-        <h3>Правила бизнеса</h3>
-        <p>Company, offer, ICP, negative ICP, sources, outreach rules, success criteria и compliance.</p>
-      </article>
-      <article class="system-item">
-        <span>memory</span>
-        <h3>Обучение на review</h3>
-        <p>Good/bad examples, learned rules, tone и reply playbook. Правки владельца становятся файлами.</p>
-      </article>
-      <article class="system-item">
-        <span>commands</span>
-        <h3>Playbooks</h3>
-        <p>Onboard, find leads, enrich, score, review, learn from feedback, generate outreach drafts.</p>
-      </article>
-      <article class="system-item">
-        <span>runs</span>
-        <h3>История кампаний</h3>
-        <p>Каждый batch живёт в отдельной папке: raw, enriched, scored, reviewed, drafts.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="loop" id="how">
-    <div class="section-head">
-      <span class="kicker">Как работает AI LeadGen OS</span>
-      <h2>ICP → small batch → scoring → review → Memory Patch → outreach drafts</h2>
-    </div>
-    <div class="steps">
-      <article class="step"><span>01</span><h3>Define ICP</h3><p>Формулируем сегмент, сигналы покупки и negative ICP до поиска.</p></article>
-      <article class="step"><span>02</span><h3>Small batch</h3><p>10-20 лидов из источника. Один batch - один campaign profile.</p></article>
-      <article class="step"><span>03</span><h3>Evidence + scoring</h3><p>У каждого лида должен быть наблюдаемый факт и why_relevant.</p></article>
-      <article class="step"><span>04</span><h3>Review</h3><p>Человек размечает good / maybe / bad и объясняет причины.</p></article>
-      <article class="step"><span>05</span><h3>Memory Patch</h3><p>Фидбек записывается в docs/os и memory, а не остаётся в чате.</p></article>
-      <article class="step"><span>06</span><h3>Outreach drafts</h3><p>Только approved лиды. Каждое сообщение с approval_required: yes.</p></article>
-    </div>
-  </section>
-
-  <section class="offers" id="inside">
-    <div class="section-head">
-      <span class="kicker">Что внутри курса</span>
-      <h2>Видео + репозиторий + практический маршрут первой сборки</h2>
-    </div>
-    <div class="offer-grid">
-      <article class="offer-card">
-        <div class="offer-tag">обучение</div>
-        <h3>Видеоуроки и roadmap</h3>
-        <p>Короткие практические уроки: как описать нишу, собрать setup, запустить первый batch, провести review и обновить memory.</p>
-        <ul class="check-list">
-          <li>сборка workspace с нуля</li>
-          <li>логика ICP и negative ICP</li>
-          <li>review good / maybe / bad</li>
-          <li>безопасная подготовка outreach drafts</li>
-        </ul>
-      </article>
-      <article class="offer-card">
-        <div class="offer-tag">актив курса</div>
-        <h3>Готовый репозиторий</h3>
-        <p>Clean template repo для Claude Code / Codex: docs/os, memory, commands, lead schema, example run и safety rules.</p>
-        <ul class="check-list">
-          <li>AGENTS.md как контракт агента</li>
-          <li>playbooks для leadgen loop</li>
-          <li>Memory Patch Protocol</li>
-          <li>инструкции по адаптации под нишу</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section class="proof" id="result">
-    <div class="section-head">
-      <span class="kicker">Результат после курса</span>
-      <h2>Ты умеешь запускать маленькие leadgen-циклы и улучшать систему на своём feedback</h2>
-      <p>Хороший результат курса - не "готовая машина продаж", а понятный процесс: как найти первый batch, отделить мусор от перспективных лидов, записать правила и подготовить персональные драфты без хаоса.</p>
-    </div>
-    <div class="proof-board">
-      <div class="proof-col">
-        <span class="proof-label">workspace</span>
-        <p>Свой репозиторий с правилами бизнеса, источниками, scoring, review и memory.</p>
-      </div>
-      <div class="proof-col">
-        <span class="proof-label">first loop</span>
-        <p>Понимание, как провести первый batch и не масштабировать мусор.</p>
-      </div>
-      <div class="proof-col">
-        <span class="proof-label">draft-only</span>
-        <p>Персональные outreach drafts для approved лидов, без автоотправки и выдуманной персонализации.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="limits">
-    <div class="section-head">
-      <span class="kicker">Честные ограничения</span>
-      <h2>Что я не обещаю</h2>
-    </div>
-    <div class="limit-list">
-      <span>гарантированные продажи</span>
-      <span>100% ЛПР</span>
-      <span>автономного робота</span>
-      <span>что любая ниша сработает</span>
-      <span>отправку без проверки</span>
-      <span>массовый спам</span>
+    <div class="chats">
+      <figure class="chat-card">
+        <img src="assets/chat-3.jpg" alt="Тёплый ответ на персональный outreach">
+        <figcaption><span class="chip-dot"></span> передали контакт и назначили созвон</figcaption>
+      </figure>
+      <figure class="chat-card">
+        <img src="assets/chat-1.jpg" alt="Ответ с предложением созвона">
+        <figcaption><span class="chip-dot"></span> зовёт на созвон в тот же день</figcaption>
+      </figure>
+      <figure class="chat-card">
+        <img src="assets/chat-2.jpg" alt="Ответ с назначенным созвоном">
+        <figcaption><span class="chip-dot"></span> назначили созвон на завтра</figcaption>
+      </figure>
     </div>
   </section>
 
   <section class="pricing" id="pricing">
     <div class="section-head">
       <span class="kicker">Тарифы</span>
-      <h2>Два формата обучения и внедрение под ключ</h2>
-      <p>Главный продукт - курс. DFY нужен тем, кто хочет, чтобы я адаптировал систему под бизнес и команду.</p>
+      <h2>Выбери уровень участия</h2>
     </div>
     <div class="pricing-grid">
       <article class="tier-card primary-tier">
-        <div class="offer-tag">early access</div>
-        <h3>Early Access Course</h3>
+        <div class="offer-tag">start</div>
+        <h3>AI LeadGen OS</h3>
         <div class="tier-price">99 000 ₸</div>
-        <p>Видеокурс + готовый репозиторий для Claude Code / Codex. Собираешь AI LeadGen OS сам под свою нишу.</p>
-        <ul class="check-list">
-          <li>уроки и roadmap</li>
-          <li>template repo как актив курса</li>
-          <li>docs/os, memory, commands, schema</li>
-          <li>example run и safety rules</li>
+        <p>Готовый setup + обучение, чтобы запустить систему у себя и адаптировать под нишу.</p>
+        <ul class="ticks">
+          <li>repo для Claude Code / Codex / agentic LLM</li>
+          <li>видео-модули и маршрут запуска</li>
+          <li>пример первого leadgen loop</li>
+          <li>draft-only outreach workflow</li>
         </ul>
-        <a class="btn btn-primary btn-block" href="#apply" data-intent="course">Купить доступ к курсу</a>
+        <a class="btn btn-primary btn-block" href="#apply" data-intent="course">Я в деле</a>
       </article>
       <article class="tier-card">
-        <div class="offer-tag">с разбором</div>
-        <h3>Course + Review</h3>
+        <div class="offer-tag">with me</div>
+        <h3>OS + связь со мной</h3>
         <div class="tier-price">299 000 ₸</div>
-        <p>Курс + review твоего первого setup и batch, чтобы быстрее увидеть ошибки в ICP, scoring и Memory Patch.</p>
-        <ul class="check-list">
-          <li>всё из Early Access Course</li>
-          <li>review первого docs/os setup</li>
-          <li>review первого batch</li>
-          <li>рекомендации по next batch</li>
+        <p>Для тех, кто хочет собрать сам, но с моим разбором первого setup и batch.</p>
+        <ul class="ticks">
+          <li>всё из базового доступа</li>
+          <li>review твоего ICP и sources</li>
+          <li>разбор первого batch</li>
+          <li>рекомендации по следующему циклу</li>
         </ul>
-        <a class="btn btn-ghost btn-block" href="#apply" data-intent="review">Выбрать Course + Review</a>
+        <a class="btn btn-ghost btn-block" href="#apply" data-intent="review">Хочу с разбором</a>
       </article>
       <article class="tier-card">
-        <div class="offer-tag">для команды</div>
+        <div class="offer-tag">dfy</div>
         <h3>Done For You</h3>
         <div class="tier-price">от 1 500 000 ₸</div>
-        <p>Заявка на внедрение AI LeadGen OS под нишу, оффер, источники и рабочий процесс команды.</p>
-        <ul class="check-list">
-          <li>диагностика ниши и оффера</li>
-          <li>ICP / sources / scoring</li>
-          <li>test batch и review</li>
-          <li>handoff процесса команде</li>
+        <p>Я собираю AI LeadGen OS под твой бизнес, запускаю test batch и передаю процесс.</p>
+        <ul class="ticks">
+          <li>кастомная настройка под нишу</li>
+          <li>test batch + review</li>
+          <li>handoff команде</li>
+          <li>связь со мной на внедрении</li>
         </ul>
-        <a class="btn btn-secondary btn-block" href="#apply" data-intent="dfy">Оставить заявку на внедрение</a>
+        <a class="btn btn-secondary btn-block" href="#apply" data-intent="dfy">Собрать под меня</a>
       </article>
     </div>
   </section>
 
-  <section class="offers" id="dfy">
-    <div class="section-head">
-      <span class="kicker">Done For You</span>
-      <h2>Если не хочешь собирать сам, можно внедрить AI LeadGen OS под твой бизнес</h2>
-      <p>Я разбираю нишу и оффер, формирую ICP, настраиваю sources/scoring/review/memory, делаю тестовый batch, готовлю outreach drafts и передаю команде рабочий процесс. Сначала всегда test batch: если ниша или источники не держат качество, не строим систему вслепую.</p>
-    </div>
-    <div class="offer-grid">
-      <article class="offer-card">
-        <div class="offer-tag">что делаю</div>
-        <h3>Setup под вашу нишу</h3>
-        <ul class="check-list">
-          <li>разбор ICP и negative ICP</li>
-          <li>подбор источников и evidence signals</li>
-          <li>scoring и review workflow</li>
-          <li>Memory Patch после первого batch</li>
-        </ul>
-      </article>
-      <article class="offer-card">
-        <div class="offer-tag">что не делаю</div>
-        <h3>Без обещаний "клиентов завтра"</h3>
-        <p>DFY ускоряет сборку процесса, но не отменяет качество оффера, рынка и человеческий approval. Outreach остаётся draft-only до подтверждения списка, текста, канала и объёма.</p>
-        <a class="btn btn-secondary btn-block" href="#apply" data-intent="dfy">Оставить заявку на внедрение</a>
-      </article>
+  <section class="why">
+    <div class="why-inner">
+      <div class="why-photo">
+        <img src="assets/founder-hongkong.jpg" alt="Ильяс Агадилов">
+      </div>
+      <div class="why-text">
+        <span class="kicker">Кто собирает</span>
+        <h2>Я упаковал это так, потому что leadgen нельзя нормально сделать одной универсальной кнопкой</h2>
+        <p>
+          У каждой ниши свои сигналы, источники, язык, гео и тон outreach. Поэтому AI LeadGen OS даёт не “магический SaaS”,
+          а систему, которую можно настроить под твой рынок и улучшать через review.
+        </p>
+        <p class="why-sign">Ильяс Агадилов · @iagadilov</p>
+      </div>
     </div>
   </section>
 
   <section class="faq">
     <div class="section-head">
       <span class="kicker">FAQ</span>
-      <h2>Самые частые вопросы</h2>
+      <h2>Коротко по важным вопросам</h2>
     </div>
     <div class="faq-grid">
-      <article><h3>Это SaaS?</h3><p>Нет. Это курс + workspace setup. Ты работаешь в Claude Code / Codex с template repo.</p></article>
-      <article><h3>Это просто промпты?</h3><p>Нет. Commands - только интерфейс. Продукт - структура, review loop, memory, schema и safety gates.</p></article>
-      <article><h3>Будут клиенты после курса?</h3><p>Курс не гарантирует продажи. Он даёт процесс поиска, проверки и подготовки outreach drafts.</p></article>
-      <article><h3>Можно сразу отправлять?</h3><p>Нет. По умолчанию drafts-only. Отправка - отдельный human approval по списку, тексту, каналу и объёму.</p></article>
-      <article><h3>Будут 100% ЛПР?</h3><p>Нет. Система помогает искать контактные пути и проверять evidence, но не обещает идеальные контакты в каждой нише.</p></article>
-      <article><h3>Что выбрать: Course или DFY?</h3><p>Course - если хочешь собрать сам. DFY - если нужен setup под бизнес и handoff процесса команде.</p></article>
+      <article><h3>Это SaaS?</h3><p>Нет. Это готовый setup, который ты запускаешь в Claude Code / Codex или другой agentic LLM и настраиваешь под нишу.</p></article>
+      <article><h3>Это просто template repo?</h3><p>Нет. Репозиторий - часть продукта. Важное внутри: обучение, логика настройки, scoring, review, Memory Patch и workflow.</p></article>
+      <article><h3>Система сама отправляет сообщения?</h3><p>По умолчанию нет. Она готовит drafts. Отправка только после human approval по списку, тексту, каналу и объёму.</p></article>
+      <article><h3>Будут 100% ЛПР?</h3><p>Нет. Где возможно - ищем контактный путь и decision maker. Но я не обещаю идеальные контакты в каждой нише.</p></article>
     </div>
   </section>
 
@@ -396,15 +285,12 @@
     <div class="apply-grid">
       <div class="apply-copy">
         <span class="kicker">Следующий шаг</span>
-        <h2>Выбери формат: курс или внедрение</h2>
-        <p>
-          Оставь контакт. Я пришлю детали доступа к курсу или разберу,
-          подходит ли твоя ниша под DFY-внедрение.
-        </p>
+        <h2>Залетай в setup или оставь заявку на DFY</h2>
+        <p>Оставь контакт. Я пришлю детали доступа или разберу, как собрать AI LeadGen OS под твою нишу.</p>
         <ul class="apply-points">
-          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>Без обещаний "клиентов на автомате"</li>
-          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>Курс = собрать самому</li>
-          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>DFY = адаптировать под команду</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>Без обещаний “клиентов на автомате”</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>Сначала ниша, источники и quality gate</li>
+          <li><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>Отвечаю лично</li>
         </ul>
       </div>
 
@@ -417,29 +303,29 @@
         <div class="field">
           <label>Что ближе сейчас</label>
           <div class="segmented" role="radiogroup" aria-label="Формат">
-            <input type="radio" id="ty-course" name="type" value="Курс AI LeadGen OS - хочу собрать сам" checked>
-            <label for="ty-course">Early Access</label>
-            <input type="radio" id="ty-review" name="type" value="Course + Review - курс с разбором">
-            <label for="ty-review">Курс + review</label>
+            <input type="radio" id="ty-course" name="type" value="AI LeadGen OS - готовый setup + обучение" checked>
+            <label for="ty-course">Setup</label>
+            <input type="radio" id="ty-review" name="type" value="AI LeadGen OS + связь с Ильясом">
+            <label for="ty-review">С разбором</label>
             <input type="radio" id="ty-dfy" name="type" value="Done For You внедрение AI LeadGen OS">
             <label for="ty-dfy">DFY</label>
           </div>
-          <span class="field-hint">Early Access - 99 000 ₸. Course + Review - 299 000 ₸. DFY - от 1 500 000 ₸ по заявке.</span>
+          <span class="field-hint">Setup - 99 000 ₸. С разбором - 299 000 ₸. DFY - от 1 500 000 ₸.</span>
         </div>
 
         <div class="field">
           <label for="niche">Что продаёшь / какая ниша</label>
-          <input id="niche" name="niche" type="text" placeholder="напр. маркетинг-агентство, B2B-сервис, опт, AI-продукт" required>
+          <input id="niche" name="niche" type="text" placeholder="напр. B2B-сервис, агентство, консалтинг, AI-разработка" required>
         </div>
 
         <div class="field">
           <label for="target">Кого хочешь находить</label>
-          <textarea id="target" name="target" rows="3" placeholder="кто идеальный клиент, какая роль ЛПР, какие сигналы покупки важны" required></textarea>
+          <textarea id="target" name="target" rows="3" placeholder="идеальный клиент, гео, роль ЛПР, какие сигналы важны" required></textarea>
         </div>
 
         <div class="field">
           <label for="geo">Гео</label>
-          <input id="geo" name="geo" type="text" placeholder="напр. Казахстан, РФ, США, весь мир" required>
+          <input id="geo" name="geo" type="text" placeholder="Казахстан, СНГ, Европа, США..." required>
         </div>
 
         <div class="field">
@@ -466,12 +352,10 @@
           <div class="select-wrap">
             <select id="hook" name="hook">
               <option value="">- выбери -</option>
-              <option value="Понять, как устроен AI LeadGen OS">Понять, как устроен AI LeadGen OS</option>
-              <option value="Собрать workspace под свою нишу">Собрать workspace под свою нишу</option>
-              <option value="Купить Early Access Course">Купить Early Access Course</option>
-              <option value="Взять Course + Review">Взять Course + Review</option>
-              <option value="Внедрить систему под команду">Внедрить систему под команду</option>
-              <option value="Проверить нишу test batch">Проверить нишу test batch</option>
+              <option value="Я в деле - хочу setup">Я в деле - хочу setup</option>
+              <option value="Хочу setup с разбором">Хочу setup с разбором</option>
+              <option value="Хочу DFY под бизнес">Хочу DFY под бизнес</option>
+              <option value="Хочу понять, подойдёт ли ниша">Хочу понять, подойдёт ли ниша</option>
             </select>
             <svg class="select-caret" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
@@ -483,7 +367,7 @@
           <span class="btn-label">Отправить</span>
           <span class="btn-spin" aria-hidden="true"></span>
         </button>
-        <p class="form-fine">Отвечу лично. Без спама и без авторассылок.</p>
+        <p class="form-fine">Без спама. Напишу лично.</p>
         <p class="form-error" id="formError" role="alert"></p>
       </form>
 
@@ -503,7 +387,7 @@
 <footer class="foot">
   <div class="foot-inner">
     <span>AI LeadGen OS</span>
-    <span class="foot-mid">курс + workspace для B2B-лидгена</span>
+    <span class="foot-mid">готовый setup + обучение / DFY-внедрение</span>
     <div class="foot-links">
       <a href="https://t.me/iagadilov" target="_blank" rel="noopener">Telegram</a>
       <a href="https://instagram.com/iagadilov" target="_blank" rel="noopener">Instagram</a>
