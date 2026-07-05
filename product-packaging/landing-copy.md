@@ -12,7 +12,7 @@
 **Secondary CTA:** Собрать под меня
 
 **Trust line:**  
-Под твою нишу. С твоими источниками. Outreach draft-only до human approval.
+Под твою нишу. С твоими источниками. Outreach + sending только после human approval.
 
 ## Positioning
 
@@ -35,7 +35,7 @@ AI LeadGen OS - это не SaaS и не курс по промптам.
 - модули ICP, sources, scoring, review, Memory Patch;
 - example run;
 - workflow для персональных outreach drafts;
-- safety: drafts-only до human approval.
+- controlled sending module после approval, дедупа, лимитов и выбора канала.
 
 ### 2. Done For You
 
