@@ -55,7 +55,7 @@
         </h1>
         <p class="lede reveal" style="--d:160ms">
           Получаешь готовый setup и запускаешь его у себя в Claude Code, Codex или другой agentic LLM.
-          На выходе: отфильтрованные B2B-лиды, контакты, угол захода и персональный outreach draft под каждого.
+          На выходе: отфильтрованные B2B-лиды, контакты, угол захода, персональный outreach draft и контекстный watcher для ответов.
         </p>
         <div class="hero-actions reveal" style="--d:240ms">
           <a class="btn btn-primary" href="#apply" data-intent="course">
@@ -155,6 +155,7 @@
           <article><span>04</span><h3>Scoring + review</h3><p>Фильтрация лидов, причины score, good / maybe / bad и обновление правил.</p></article>
           <article><span>05</span><h3>Memory Patch</h3><p>Фидбек не теряется в чате: система учится на твоих решениях и следующих batch.</p></article>
           <article><span>06</span><h3>Outreach + sending</h3><p>Угол захода, персональный текст и модуль отправки по approved лидам: после approval, дедупа, лимитов и выбора канала.</p></article>
+          <article><span>07</span><h3>Inbox watcher</h3><p>Модуль авто-ответов: смотрит входящие, помнит контекст по каждому лиду и отвечает по правилам или выводит сложное на апрув.</p></article>
         </div>
       </div>
 
@@ -182,6 +183,7 @@
       <article class="output-card"><span>angle</span><h3>Угол захода</h3><p>Почему именно им можно написать и на какой наблюдаемый факт опереться.</p></article>
       <article class="output-card"><span>draft</span><h3>Персональный outreach</h3><p>Черновик сообщения под конкретный бизнес, который человек финально апрувит.</p></article>
       <article class="output-card"><span>send</span><h3>Опциональная отправка</h3><p>Если включаешь модуль: outreach уходит по approved списку с дедупом, лимитами и логом отправок.</p></article>
+      <article class="output-card"><span>reply</span><h3>Авто-ответы по контексту</h3><p>Watcher видит входящие, держит историю лида и может отвечать на рутину, не теряя предыдущие касания.</p></article>
     </div>
   </section>
 
@@ -223,6 +225,7 @@
           <li>видео-модули и маршрут запуска</li>
           <li>пример первого leadgen loop</li>
           <li>outreach drafts + controlled sending module</li>
+          <li>inbox watcher для авто-ответов по контексту лида</li>
         </ul>
         <a class="btn btn-primary btn-block" href="#apply" data-intent="course">Я в деле</a>
       </article>
@@ -283,6 +286,7 @@
       <article><h3>Это SaaS?</h3><p>Нет. Это готовый setup, который ты запускаешь в Claude Code / Codex или другой agentic LLM и настраиваешь под нишу.</p></article>
       <article><h3>Это просто template repo?</h3><p>Нет. Репозиторий - часть продукта. Важное внутри: обучение, логика настройки, scoring, review, Memory Patch и workflow.</p></article>
       <article><h3>Модуль отправки есть?</h3><p>Да. Система может готовить и отправлять outreach, но отправка идёт отдельным шагом после human approval, дедупа, лимитов канала и проверки текста.</p></article>
+      <article><h3>А ответы лидам тоже можно автоматизировать?</h3><p>Да. Есть watcher, который смотрит входящие, помнит контекст по каждому лиду и может отвечать на рутинные сообщения по правилам. Цена, торг, условия сделки и сложные моменты уходят человеку.</p></article>
       <article><h3>Будут 100% ЛПР?</h3><p>Нет. Где возможно - ищем контактный путь и decision maker. Но я не обещаю идеальные контакты в каждой нише.</p></article>
     </div>
   </section>
